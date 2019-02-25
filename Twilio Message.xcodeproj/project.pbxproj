@@ -1,0 +1,1145 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B74C92CF21F4E0E6001D0631 /* html in Resources */ = {isa = PBXBuildFile; fileRef = B74C92CE21F4E0E6001D0631 /* html */; };
+		B74C92D421F4F29D001D0631 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C92D121F4F29D001D0631 /* HelpViewController.swift */; };
+		B74C92D521F4F29D001D0631 /* HelpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C92D221F4F29D001D0631 /* HelpCoordinator.swift */; };
+		B74C92D621F4F29D001D0631 /* HelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C92D321F4F29D001D0631 /* HelpViewModel.swift */; };
+		B74ED28B21C03DB5000E0BA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED27C21C03DB5000E0BA9 /* AppDelegate.swift */; };
+		B74ED28E21C03DB5000E0BA9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED28321C03DB5000E0BA9 /* LoginViewController.swift */; };
+		B74ED28F21C03DB5000E0BA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B74ED28521C03DB5000E0BA9 /* Assets.xcassets */; };
+		B74ED29021C03DB5000E0BA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74ED28621C03DB5000E0BA9 /* LaunchScreen.storyboard */; };
+		B74ED29121C03DB5000E0BA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74ED28821C03DB5000E0BA9 /* Main.storyboard */; };
+		B74ED29821C03F67000E0BA9 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED29721C03F67000E0BA9 /* LoginCoordinator.swift */; };
+		B74ED29E21C03F8C000E0BA9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED29D21C03F8C000E0BA9 /* LoginViewModel.swift */; };
+		B74ED2A321C0441A000E0BA9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED2A021C0441A000E0BA9 /* WelcomeViewController.swift */; };
+		B74ED2A421C0441A000E0BA9 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED2A121C0441A000E0BA9 /* WelcomeViewModel.swift */; };
+		B74ED2A521C0441A000E0BA9 /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED2A221C0441A000E0BA9 /* WelcomeCoordinator.swift */; };
+		B74ED2B621C05495000E0BA9 /* ListMessagesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED2A921C05494000E0BA9 /* ListMessagesCoordinator.swift */; };
+		B74ED2B721C05495000E0BA9 /* ListMessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED2AA21C05494000E0BA9 /* ListMessagesViewModel.swift */; };
+		B74ED2B821C05495000E0BA9 /* ListMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED2AB21C05494000E0BA9 /* ListMessagesViewController.swift */; };
+		B74ED2C421C0561F000E0BA9 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74ED2C121C0561E000E0BA9 /* RxSwift.framework */; };
+		B74ED2C521C0561F000E0BA9 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74ED2C221C0561F000E0BA9 /* RxCocoa.framework */; };
+		B74ED2C621C0561F000E0BA9 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74ED2C321C0561F000E0BA9 /* SwiftyBeaver.framework */; };
+		B74ED2C921C065EB000E0BA9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED2C821C065EB000E0BA9 /* Coordinator.swift */; };
+		B74ED2CB21C065FB000E0BA9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED2CA21C065FB000E0BA9 /* ViewModel.swift */; };
+		B74ED2CE21C06F59000E0BA9 /* Storyboard+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74ED2CD21C06F59000E0BA9 /* Storyboard+Util.swift */; };
+		B758A7D821EA28D200269B1D /* TwilioError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758A7D721EA28D200269B1D /* TwilioError.swift */; };
+		B758A7DA21EA38F900269B1D /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758A7D921EA38F900269B1D /* UIViewController+Alert.swift */; };
+		B758A7DC21EA53F000269B1D /* NavigtionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758A7DB21EA53F000269B1D /* NavigtionController.swift */; };
+		B758A7DE21EA541C00269B1D /* ViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758A7DD21EA541C00269B1D /* ViewControllerBase.swift */; };
+		B758A7E021EA556E00269B1D /* Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758A7DF21EA556E00269B1D /* Styling.swift */; };
+		B758A7E221EA5AE300269B1D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758A7E121EA5AE300269B1D /* UIColor+Hex.swift */; };
+		B758A7E521EA5F7800269B1D /* UIView+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758A7E321EA5F7700269B1D /* UIView+CALayer.swift */; };
+		B758A7E621EA5F7800269B1D /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758A7E421EA5F7800269B1D /* UIView+Border.swift */; };
+		B758A7E821EA68DB00269B1D /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758A7E721EA68DB00269B1D /* UserDefaults+Storage.swift */; };
+		B758A7EA21EA6C6300269B1D /* UINavigationController+Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758A7E921EA6C6300269B1D /* UINavigationController+Transition.swift */; };
+		B758D7CF21EB55FF00A14824 /* UIWindow+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758D7CE21EB55FF00A14824 /* UIWindow+Toast.swift */; };
+		B76AD1142205AE92002D6F71 /* UIWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AD1132205AE92002D6F71 /* UIWelcome.swift */; };
+		B76AD1152205BAA2002D6F71 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74ED2C121C0561E000E0BA9 /* RxSwift.framework */; };
+		B76AD1172205C579002D6F71 /* XCUIElement+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AD1162205C579002D6F71 /* XCUIElement+Util.swift */; };
+		B76AD1192205C7B5002D6F71 /* XCTestCase+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AD1182205C7B5002D6F71 /* XCTestCase+Util.swift */; };
+		B76AD11C2205D376002D6F71 /* Test_Login_Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AD11B2205D376002D6F71 /* Test_Login_Success.swift */; };
+		B76AD11E2205D382002D6F71 /* UILogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AD11D2205D382002D6F71 /* UILogin.swift */; };
+		B76AD1202205D463002D6F71 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AD11F2205D463002D6F71 /* Util.swift */; };
+		B76BACD12200EE2600ED5EF0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BACA42200EE2600ED5EF0 /* Reachability.swift */; };
+		B76BACD42200EED100ED5EF0 /* Reachability+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BACD32200EED100ED5EF0 /* Reachability+Util.swift */; };
+		B76BACD6220103A200ED5EF0 /* UIWindow+Busy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BACD5220103A200ED5EF0 /* UIWindow+Busy.swift */; };
+		B76BACDB22024FBF00ED5EF0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74ED2C121C0561E000E0BA9 /* RxSwift.framework */; };
+		B785BF98220254100032C2DE /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785BF97220254100032C2DE /* Util.swift */; };
+		B785BF9A220257310032C2DE /* TestAPI-Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785BF99220257310032C2DE /* TestAPI-Accounts.swift */; };
+		B785BF9C2202573C0032C2DE /* TestAPI-Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785BF9B2202573C0032C2DE /* TestAPI-Messages.swift */; };
+		B785BF9E2202593F0032C2DE /* TestAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785BF9D2202593F0032C2DE /* TestAccountViewModel.swift */; };
+		B785BFA022025B830032C2DE /* TestMessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785BF9F22025B830032C2DE /* TestMessagesViewModel.swift */; };
+		B785BFA2220261350032C2DE /* TestComposeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785BFA1220261350032C2DE /* TestComposeViewModel.swift */; };
+		B7950EC921DD608700E3EFB0 /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950EC521DD608700E3EFB0 /* AccountCoordinator.swift */; };
+		B7950ECA21DD608700E3EFB0 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950EC621DD608700E3EFB0 /* AccountViewModel.swift */; };
+		B7950ECB21DD608700E3EFB0 /* AccountViewModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950EC721DD608700E3EFB0 /* AccountViewModelItem.swift */; };
+		B7950ECC21DD608700E3EFB0 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950EC821DD608700E3EFB0 /* AccountViewController.swift */; };
+		B7950ECE21DD60E000E3EFB0 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950ECD21DD60E000E3EFB0 /* Account.swift */; };
+		B7950ED021DD60E800E3EFB0 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950ECF21DD60E800E3EFB0 /* Accounts.swift */; };
+		B7950ED321DD63FF00E3EFB0 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950ED121DD63FF00E3EFB0 /* AccountTableViewCell.swift */; };
+		B7950ED421DD63FF00E3EFB0 /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7950ED221DD63FF00E3EFB0 /* AccountTableViewCell.xib */; };
+		B7950ED621DD6EB500E3EFB0 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950ED521DD6EB500E3EFB0 /* Dictionary+JSON.swift */; };
+		B7950ED821DD7AE200E3EFB0 /* Dictionary+QueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950ED721DD7AE200E3EFB0 /* Dictionary+QueryString.swift */; };
+		B79795E321A7669F004537A8 /* Test_Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79795E221A7669F004537A8 /* Test_Welcome.swift */; };
+		B7FA12BD21DBA28E00F547AC /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FA12BC21DBA28E00F547AC /* KeychainSwift.framework */; };
+		B7FA12BF21DBA2BB00F547AC /* KeychainSwift+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12BE21DBA2BB00F547AC /* KeychainSwift+Save.swift */; };
+		B7FA12CB21DBAC3C00F547AC /* ComposeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12C821DBAC3C00F547AC /* ComposeCoordinator.swift */; };
+		B7FA12CC21DBAC3C00F547AC /* ComposeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12C921DBAC3C00F547AC /* ComposeViewModel.swift */; };
+		B7FA12CD21DBAC3C00F547AC /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12CA21DBAC3C00F547AC /* ComposeViewController.swift */; };
+		B7FA12D221DBBD7000F547AC /* URLRequest+HTTPAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12CE21DBBD7000F547AC /* URLRequest+HTTPAuth.swift */; };
+		B7FA12D321DBBD7000F547AC /* String+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12CF21DBBD7000F547AC /* String+JSON.swift */; };
+		B7FA12D421DBBD7000F547AC /* Data+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12D021DBBD7000F547AC /* Data+JSON.swift */; };
+		B7FA12DB21DBBD7800F547AC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12D821DBBD7800F547AC /* Message.swift */; };
+		B7FA12DF21DBBD9500F547AC /* URLRequest+TwilioMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12DE21DBBD9500F547AC /* URLRequest+TwilioMessage.swift */; };
+		B7FA12E121DBBEFB00F547AC /* NSURL+Twilio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12E021DBBEFB00F547AC /* NSURL+Twilio.swift */; };
+		B7FA12E321DBC07000F547AC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12E221DBC07000F547AC /* API.swift */; };
+		B7FA12E521DBC39800F547AC /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12E421DBC39800F547AC /* Messages.swift */; };
+		B7FA12E721DBC3C200F547AC /* RestMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12E621DBC3C200F547AC /* RestMapper.swift */; };
+		B7FA12E921DBFEF800F547AC /* TwilioResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12E821DBFEF800F547AC /* TwilioResponse.swift */; };
+		B7FA12EC21DC0D3C00F547AC /* ListMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12EA21DC0D3C00F547AC /* ListMessageTableViewCell.swift */; };
+		B7FA12ED21DC0D3C00F547AC /* ListMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7FA12EB21DC0D3C00F547AC /* ListMessageTableViewCell.xib */; };
+		B7FA12EF21DC0D7700F547AC /* ListMessagesViewModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA12EE21DC0D7700F547AC /* ListMessagesViewModelItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B79795D421A7669F004537A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B79795B721A7669C004537A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B79795BE21A7669C004537A8;
+			remoteInfo = "Twilio Message";
+		};
+		B79795DF21A7669F004537A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B79795B721A7669C004537A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B79795BE21A7669C004537A8;
+			remoteInfo = "Twilio Message";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B74C92CE21F4E0E6001D0631 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
+		B74C92D121F4F29D001D0631 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		B74C92D221F4F29D001D0631 /* HelpCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpCoordinator.swift; sourceTree = "<group>"; };
+		B74C92D321F4F29D001D0631 /* HelpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewModel.swift; sourceTree = "<group>"; };
+		B74ED27C21C03DB5000E0BA9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B74ED28321C03DB5000E0BA9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B74ED28521C03DB5000E0BA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B74ED28721C03DB5000E0BA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B74ED28921C03DB5000E0BA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B74ED28A21C03DB5000E0BA9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B74ED29721C03F67000E0BA9 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		B74ED29D21C03F8C000E0BA9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B74ED2A021C0441A000E0BA9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B74ED2A121C0441A000E0BA9 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		B74ED2A221C0441A000E0BA9 /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
+		B74ED2A921C05494000E0BA9 /* ListMessagesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMessagesCoordinator.swift; sourceTree = "<group>"; };
+		B74ED2AA21C05494000E0BA9 /* ListMessagesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMessagesViewModel.swift; sourceTree = "<group>"; };
+		B74ED2AB21C05494000E0BA9 /* ListMessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMessagesViewController.swift; sourceTree = "<group>"; };
+		B74ED2C121C0561E000E0BA9 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
+		B74ED2C221C0561F000E0BA9 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		B74ED2C321C0561F000E0BA9 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = SOURCE_ROOT; };
+		B74ED2C821C065EB000E0BA9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B74ED2CA21C065FB000E0BA9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B74ED2CD21C06F59000E0BA9 /* Storyboard+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Util.swift"; sourceTree = "<group>"; };
+		B758A7D721EA28D200269B1D /* TwilioError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioError.swift; sourceTree = "<group>"; };
+		B758A7D921EA38F900269B1D /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		B758A7DB21EA53F000269B1D /* NavigtionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigtionController.swift; sourceTree = "<group>"; };
+		B758A7DD21EA541C00269B1D /* ViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBase.swift; sourceTree = "<group>"; };
+		B758A7DF21EA556E00269B1D /* Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styling.swift; sourceTree = "<group>"; };
+		B758A7E121EA5AE300269B1D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		B758A7E321EA5F7700269B1D /* UIView+CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+CALayer.swift"; sourceTree = "<group>"; };
+		B758A7E421EA5F7800269B1D /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		B758A7E721EA68DB00269B1D /* UserDefaults+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Storage.swift"; sourceTree = "<group>"; };
+		B758A7E921EA6C6300269B1D /* UINavigationController+Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Transition.swift"; sourceTree = "<group>"; };
+		B758D7CE21EB55FF00A14824 /* UIWindow+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Toast.swift"; sourceTree = "<group>"; };
+		B76AD1132205AE92002D6F71 /* UIWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWelcome.swift; sourceTree = "<group>"; };
+		B76AD1162205C579002D6F71 /* XCUIElement+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Util.swift"; sourceTree = "<group>"; };
+		B76AD1182205C7B5002D6F71 /* XCTestCase+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Util.swift"; sourceTree = "<group>"; };
+		B76AD11B2205D376002D6F71 /* Test_Login_Success.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Login_Success.swift; sourceTree = "<group>"; };
+		B76AD11D2205D382002D6F71 /* UILogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILogin.swift; sourceTree = "<group>"; };
+		B76AD11F2205D463002D6F71 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B76BACA42200EE2600ED5EF0 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		B76BACD32200EED100ED5EF0 /* Reachability+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reachability+Util.swift"; sourceTree = "<group>"; };
+		B76BACD5220103A200ED5EF0 /* UIWindow+Busy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Busy.swift"; sourceTree = "<group>"; };
+		B785BF97220254100032C2DE /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B785BF99220257310032C2DE /* TestAPI-Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestAPI-Accounts.swift"; sourceTree = "<group>"; };
+		B785BF9B2202573C0032C2DE /* TestAPI-Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestAPI-Messages.swift"; sourceTree = "<group>"; };
+		B785BF9D2202593F0032C2DE /* TestAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccountViewModel.swift; sourceTree = "<group>"; };
+		B785BF9F22025B830032C2DE /* TestMessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMessagesViewModel.swift; sourceTree = "<group>"; };
+		B785BFA1220261350032C2DE /* TestComposeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestComposeViewModel.swift; sourceTree = "<group>"; };
+		B7950EC521DD608700E3EFB0 /* AccountCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
+		B7950EC621DD608700E3EFB0 /* AccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		B7950EC721DD608700E3EFB0 /* AccountViewModelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModelItem.swift; sourceTree = "<group>"; };
+		B7950EC821DD608700E3EFB0 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		B7950ECD21DD60E000E3EFB0 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		B7950ECF21DD60E800E3EFB0 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		B7950ED121DD63FF00E3EFB0 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		B7950ED221DD63FF00E3EFB0 /* AccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
+		B7950ED521DD6EB500E3EFB0 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
+		B7950ED721DD7AE200E3EFB0 /* Dictionary+QueryString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+QueryString.swift"; sourceTree = "<group>"; };
+		B79795BF21A7669C004537A8 /* Twilio Message.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twilio Message.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79795D321A7669F004537A8 /* UnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79795D921A7669F004537A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B79795DE21A7669F004537A8 /* UITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79795E221A7669F004537A8 /* Test_Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Welcome.swift; sourceTree = "<group>"; };
+		B79795E421A7669F004537A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FA12BC21DBA28E00F547AC /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = SOURCE_ROOT; };
+		B7FA12BE21DBA2BB00F547AC /* KeychainSwift+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainSwift+Save.swift"; sourceTree = "<group>"; };
+		B7FA12C821DBAC3C00F547AC /* ComposeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeCoordinator.swift; sourceTree = "<group>"; };
+		B7FA12C921DBAC3C00F547AC /* ComposeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewModel.swift; sourceTree = "<group>"; };
+		B7FA12CA21DBAC3C00F547AC /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		B7FA12CE21DBBD7000F547AC /* URLRequest+HTTPAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+HTTPAuth.swift"; sourceTree = "<group>"; };
+		B7FA12CF21DBBD7000F547AC /* String+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+JSON.swift"; sourceTree = "<group>"; };
+		B7FA12D021DBBD7000F547AC /* Data+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+JSON.swift"; sourceTree = "<group>"; };
+		B7FA12D821DBBD7800F547AC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B7FA12DE21DBBD9500F547AC /* URLRequest+TwilioMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+TwilioMessage.swift"; sourceTree = "<group>"; };
+		B7FA12E021DBBEFB00F547AC /* NSURL+Twilio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSURL+Twilio.swift"; sourceTree = "<group>"; };
+		B7FA12E221DBC07000F547AC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B7FA12E421DBC39800F547AC /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		B7FA12E621DBC3C200F547AC /* RestMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestMapper.swift; sourceTree = "<group>"; };
+		B7FA12E821DBFEF800F547AC /* TwilioResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioResponse.swift; sourceTree = "<group>"; };
+		B7FA12EA21DC0D3C00F547AC /* ListMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMessageTableViewCell.swift; sourceTree = "<group>"; };
+		B7FA12EB21DC0D3C00F547AC /* ListMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListMessageTableViewCell.xib; sourceTree = "<group>"; };
+		B7FA12EE21DC0D7700F547AC /* ListMessagesViewModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMessagesViewModelItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B79795BC21A7669C004537A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FA12BD21DBA28E00F547AC /* KeychainSwift.framework in Frameworks */,
+				B74ED2C521C0561F000E0BA9 /* RxCocoa.framework in Frameworks */,
+				B74ED2C621C0561F000E0BA9 /* SwiftyBeaver.framework in Frameworks */,
+				B74ED2C421C0561F000E0BA9 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79795D021A7669F004537A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76BACDB22024FBF00ED5EF0 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79795DB21A7669F004537A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76AD1152205BAA2002D6F71 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B74C92D021F4F29D001D0631 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				B74C92D121F4F29D001D0631 /* HelpViewController.swift */,
+				B74C92D221F4F29D001D0631 /* HelpCoordinator.swift */,
+				B74C92D321F4F29D001D0631 /* HelpViewModel.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		B74ED27B21C03DB5000E0BA9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B74ED27C21C03DB5000E0BA9 /* AppDelegate.swift */,
+				B7FA12D621DBBD7800F547AC /* API */,
+				B7FA12D721DBBD7800F547AC /* Model */,
+				B74ED27D21C03DB5000E0BA9 /* Controllers */,
+				B74ED2CC21C06F3C000E0BA9 /* Utils */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B74ED27D21C03DB5000E0BA9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B74C92D021F4F29D001D0631 /* Help */,
+				B7950EC421DD608700E3EFB0 /* Account */,
+				B7FA12C721DBAC3C00F547AC /* Compose */,
+				B74ED2A821C05494000E0BA9 /* ListMessage */,
+				B74ED29F21C0441A000E0BA9 /* Welcome */,
+				B74ED28221C03DB5000E0BA9 /* Login */,
+				B74ED2C821C065EB000E0BA9 /* Coordinator.swift */,
+				B74ED2CA21C065FB000E0BA9 /* ViewModel.swift */,
+				B758A7DB21EA53F000269B1D /* NavigtionController.swift */,
+				B758A7DD21EA541C00269B1D /* ViewControllerBase.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B74ED28221C03DB5000E0BA9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B74ED28321C03DB5000E0BA9 /* LoginViewController.swift */,
+				B74ED29D21C03F8C000E0BA9 /* LoginViewModel.swift */,
+				B74ED29721C03F67000E0BA9 /* LoginCoordinator.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B74ED28421C03DB5000E0BA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B74C92CE21F4E0E6001D0631 /* html */,
+				B74ED28521C03DB5000E0BA9 /* Assets.xcassets */,
+				B74ED28621C03DB5000E0BA9 /* LaunchScreen.storyboard */,
+				B74ED28821C03DB5000E0BA9 /* Main.storyboard */,
+				B74ED28A21C03DB5000E0BA9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B74ED29F21C0441A000E0BA9 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B74ED2A221C0441A000E0BA9 /* WelcomeCoordinator.swift */,
+				B74ED2A021C0441A000E0BA9 /* WelcomeViewController.swift */,
+				B74ED2A121C0441A000E0BA9 /* WelcomeViewModel.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		B74ED2A821C05494000E0BA9 /* ListMessage */ = {
+			isa = PBXGroup;
+			children = (
+				B74ED2A921C05494000E0BA9 /* ListMessagesCoordinator.swift */,
+				B74ED2AA21C05494000E0BA9 /* ListMessagesViewModel.swift */,
+				B7FA12EE21DC0D7700F547AC /* ListMessagesViewModelItem.swift */,
+				B74ED2AB21C05494000E0BA9 /* ListMessagesViewController.swift */,
+				B7FA12EA21DC0D3C00F547AC /* ListMessageTableViewCell.swift */,
+				B7FA12EB21DC0D3C00F547AC /* ListMessageTableViewCell.xib */,
+			);
+			path = ListMessage;
+			sourceTree = "<group>";
+		};
+		B74ED2C021C05609000E0BA9 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				B7FA12BC21DBA28E00F547AC /* KeychainSwift.framework */,
+				B74ED2C221C0561F000E0BA9 /* RxCocoa.framework */,
+				B74ED2C121C0561E000E0BA9 /* RxSwift.framework */,
+				B74ED2C321C0561F000E0BA9 /* SwiftyBeaver.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		B74ED2CC21C06F3C000E0BA9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B758A7E421EA5F7800269B1D /* UIView+Border.swift */,
+				B758A7E321EA5F7700269B1D /* UIView+CALayer.swift */,
+				B7FA12D021DBBD7000F547AC /* Data+JSON.swift */,
+				B7FA12CF21DBBD7000F547AC /* String+JSON.swift */,
+				B7FA12CE21DBBD7000F547AC /* URLRequest+HTTPAuth.swift */,
+				B74ED2CD21C06F59000E0BA9 /* Storyboard+Util.swift */,
+				B7FA12BE21DBA2BB00F547AC /* KeychainSwift+Save.swift */,
+				B7FA12E021DBBEFB00F547AC /* NSURL+Twilio.swift */,
+				B7950ED521DD6EB500E3EFB0 /* Dictionary+JSON.swift */,
+				B7950ED721DD7AE200E3EFB0 /* Dictionary+QueryString.swift */,
+				B758A7D921EA38F900269B1D /* UIViewController+Alert.swift */,
+				B758A7E121EA5AE300269B1D /* UIColor+Hex.swift */,
+				B758A7E721EA68DB00269B1D /* UserDefaults+Storage.swift */,
+				B758A7E921EA6C6300269B1D /* UINavigationController+Transition.swift */,
+				B758D7CE21EB55FF00A14824 /* UIWindow+Toast.swift */,
+				B76BACD32200EED100ED5EF0 /* Reachability+Util.swift */,
+				B76BACD5220103A200ED5EF0 /* UIWindow+Busy.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B76BAC7B2200EE2500ED5EF0 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				B76BAC7C2200EE2500ED5EF0 /* Reachability */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		B76BAC7C2200EE2500ED5EF0 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B76BACA32200EE2600ED5EF0 /* Sources */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		B76BACA32200EE2600ED5EF0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B76BACA42200EE2600ED5EF0 /* Reachability.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B76BACDA22024FBF00ED5EF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7950EC421DD608700E3EFB0 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				B7950EC521DD608700E3EFB0 /* AccountCoordinator.swift */,
+				B7950EC621DD608700E3EFB0 /* AccountViewModel.swift */,
+				B7950EC721DD608700E3EFB0 /* AccountViewModelItem.swift */,
+				B7950EC821DD608700E3EFB0 /* AccountViewController.swift */,
+				B7950ED121DD63FF00E3EFB0 /* AccountTableViewCell.swift */,
+				B7950ED221DD63FF00E3EFB0 /* AccountTableViewCell.xib */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		B79795B621A7669C004537A8 = {
+			isa = PBXGroup;
+			children = (
+				B74ED27B21C03DB5000E0BA9 /* Source */,
+				B76BAC7B2200EE2500ED5EF0 /* Dependencies */,
+				B74ED2C021C05609000E0BA9 /* Framework */,
+				B74ED28421C03DB5000E0BA9 /* Resources */,
+				B79795D621A7669F004537A8 /* UnitTests */,
+				B79795E121A7669F004537A8 /* UITests */,
+				B79795C021A7669C004537A8 /* Products */,
+				B76BACDA22024FBF00ED5EF0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B79795C021A7669C004537A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B79795BF21A7669C004537A8 /* Twilio Message.app */,
+				B79795D321A7669F004537A8 /* UnitTest.xctest */,
+				B79795DE21A7669F004537A8 /* UITest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B79795D621A7669F004537A8 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B79795D921A7669F004537A8 /* Info.plist */,
+				B785BF97220254100032C2DE /* Util.swift */,
+				B785BF99220257310032C2DE /* TestAPI-Accounts.swift */,
+				B785BF9B2202573C0032C2DE /* TestAPI-Messages.swift */,
+				B785BF9D2202593F0032C2DE /* TestAccountViewModel.swift */,
+				B785BF9F22025B830032C2DE /* TestMessagesViewModel.swift */,
+				B785BFA1220261350032C2DE /* TestComposeViewModel.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		B79795E121A7669F004537A8 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B79795E421A7669F004537A8 /* Info.plist */,
+				B76AD11F2205D463002D6F71 /* Util.swift */,
+				B79795E221A7669F004537A8 /* Test_Welcome.swift */,
+				B76AD11B2205D376002D6F71 /* Test_Login_Success.swift */,
+				B76AD1132205AE92002D6F71 /* UIWelcome.swift */,
+				B76AD11D2205D382002D6F71 /* UILogin.swift */,
+				B76AD1162205C579002D6F71 /* XCUIElement+Util.swift */,
+				B76AD1182205C7B5002D6F71 /* XCTestCase+Util.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		B7FA12C721DBAC3C00F547AC /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				B7FA12C821DBAC3C00F547AC /* ComposeCoordinator.swift */,
+				B7FA12C921DBAC3C00F547AC /* ComposeViewModel.swift */,
+				B7FA12CA21DBAC3C00F547AC /* ComposeViewController.swift */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		B7FA12D621DBBD7800F547AC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B7FA12DE21DBBD9500F547AC /* URLRequest+TwilioMessage.swift */,
+				B7FA12E221DBC07000F547AC /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B7FA12D721DBBD7800F547AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7FA12D821DBBD7800F547AC /* Message.swift */,
+				B7FA12E421DBC39800F547AC /* Messages.swift */,
+				B7950ECD21DD60E000E3EFB0 /* Account.swift */,
+				B7950ECF21DD60E800E3EFB0 /* Accounts.swift */,
+				B7FA12E821DBFEF800F547AC /* TwilioResponse.swift */,
+				B7FA12E621DBC3C200F547AC /* RestMapper.swift */,
+				B758A7D721EA28D200269B1D /* TwilioError.swift */,
+				B758A7DF21EA556E00269B1D /* Styling.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B79795BE21A7669C004537A8 /* Twilio Message */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B79795E721A7669F004537A8 /* Build configuration list for PBXNativeTarget "Twilio Message" */;
+			buildPhases = (
+				B79795BB21A7669C004537A8 /* Sources */,
+				B74ED2C721C05651000E0BA9 /* Carthage update */,
+				B79795BC21A7669C004537A8 /* Frameworks */,
+				B79795BD21A7669C004537A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Twilio Message";
+			productName = "Twilio Message";
+			productReference = B79795BF21A7669C004537A8 /* Twilio Message.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B79795D221A7669F004537A8 /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B79795EA21A7669F004537A8 /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				B704E7A822109DB000CEC3F7 /* Load env. variables (UnitTests) */,
+				B79795CF21A7669F004537A8 /* Sources */,
+				B79795D021A7669F004537A8 /* Frameworks */,
+				B79795D121A7669F004537A8 /* Resources */,
+				B76BACD92202492800ED5EF0 /* Carthage update */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B79795D521A7669F004537A8 /* PBXTargetDependency */,
+			);
+			name = UnitTest;
+			productName = "Twilio MessageTests";
+			productReference = B79795D321A7669F004537A8 /* UnitTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B79795DD21A7669F004537A8 /* UITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B79795ED21A7669F004537A8 /* Build configuration list for PBXNativeTarget "UITest" */;
+			buildPhases = (
+				B704E7A722109C9300CEC3F7 /* Load env. variables (UITests) */,
+				B76AD11A2205CB69002D6F71 /* Carthage update */,
+				B79795DA21A7669F004537A8 /* Sources */,
+				B79795DB21A7669F004537A8 /* Frameworks */,
+				B79795DC21A7669F004537A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B79795E021A7669F004537A8 /* PBXTargetDependency */,
+			);
+			name = UITest;
+			productName = "Twilio MessageUITests";
+			productReference = B79795DE21A7669F004537A8 /* UITest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B79795B721A7669C004537A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ryan Powell";
+				TargetAttributes = {
+					B79795BE21A7669C004537A8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B79795D221A7669F004537A8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B79795BE21A7669C004537A8;
+					};
+					B79795DD21A7669F004537A8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B79795BE21A7669C004537A8;
+					};
+				};
+			};
+			buildConfigurationList = B79795BA21A7669C004537A8 /* Build configuration list for PBXProject "Twilio Message" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B79795B621A7669C004537A8;
+			productRefGroup = B79795C021A7669C004537A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B79795BE21A7669C004537A8 /* Twilio Message */,
+				B79795D221A7669F004537A8 /* UnitTest */,
+				B79795DD21A7669F004537A8 /* UITest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B79795BD21A7669C004537A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B74ED29121C03DB5000E0BA9 /* Main.storyboard in Resources */,
+				B74C92CF21F4E0E6001D0631 /* html in Resources */,
+				B7950ED421DD63FF00E3EFB0 /* AccountTableViewCell.xib in Resources */,
+				B7FA12ED21DC0D3C00F547AC /* ListMessageTableViewCell.xib in Resources */,
+				B74ED28F21C03DB5000E0BA9 /* Assets.xcassets in Resources */,
+				B74ED29021C03DB5000E0BA9 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79795D121A7669F004537A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79795DC21A7669F004537A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B704E7A722109C9300CEC3F7 /* Load env. variables (UITests) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Load env. variables (UITests)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "echo \"Adding accountSID to plist: ${PROJECT_DIR}/UITests/Info.plist\"\n/usr/libexec/PlistBuddy -c \"Set :accountSID $accountSID\" ${PROJECT_DIR}/UITests/Info.plist;\n\necho \"Adding authToken to plist: ${PROJECT_DIR}/UITests/Info.plist\"\n/usr/libexec/PlistBuddy -c \"Set :authToken $authToken\" ${PROJECT_DIR}/UITests/Info.plist;\n";
+		};
+		B704E7A822109DB000CEC3F7 /* Load env. variables (UnitTests) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Load env. variables (UnitTests)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $(echo \"$accountSID\" | wc -c) -gt 1 ]; then \n  echo \"Adding accountSID to plist: ${PROJECT_DIR}/UnitTests/Info.plist\"\n  /usr/libexec/PlistBuddy -c \"Set :accountSID $accountSID\" ${PROJECT_DIR}/UnitTests/Info.plist; \nfi\n\nif [ $(echo \"$authToken\" | wc -c) -gt 1 ]; then \n  echo \"Adding authSID to plist: ${PROJECT_DIR}/UnitTests/Info.plist\"\n  /usr/libexec/PlistBuddy -c \"Set :authToken $authToken\" ${PROJECT_DIR}/UnitTests/Info.plist; fi\n\nif [ $(echo \"$toSMSNumber\" | wc -c) -gt 1 ]; then \n  echo \"Adding toSMSNumber to plist: ${PROJECT_DIR}/UnitTests/Info.plist\"\n  /usr/libexec/PlistBuddy -c \"Set :toSMSNumber $toSMSNumber\" ${PROJECT_DIR}/UnitTests/Info.plist; fi\n";
+		};
+		B74ED2C721C05651000E0BA9 /* Carthage update */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainSwift.framework",
+			);
+			name = "Carthage update";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyBeaver.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/KeychainSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		B76AD11A2205CB69002D6F71 /* Carthage update */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = "Carthage update";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		B76BACD92202492800ED5EF0 /* Carthage update */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = "Carthage update";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B79795BB21A7669C004537A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B758A7DA21EA38F900269B1D /* UIViewController+Alert.swift in Sources */,
+				B7950ECC21DD608700E3EFB0 /* AccountViewController.swift in Sources */,
+				B7FA12DF21DBBD9500F547AC /* URLRequest+TwilioMessage.swift in Sources */,
+				B758A7DE21EA541C00269B1D /* ViewControllerBase.swift in Sources */,
+				B758A7E521EA5F7800269B1D /* UIView+CALayer.swift in Sources */,
+				B7950ECA21DD608700E3EFB0 /* AccountViewModel.swift in Sources */,
+				B7FA12D321DBBD7000F547AC /* String+JSON.swift in Sources */,
+				B74ED28E21C03DB5000E0BA9 /* LoginViewController.swift in Sources */,
+				B7FA12E121DBBEFB00F547AC /* NSURL+Twilio.swift in Sources */,
+				B758A7E221EA5AE300269B1D /* UIColor+Hex.swift in Sources */,
+				B7FA12E521DBC39800F547AC /* Messages.swift in Sources */,
+				B74ED2CE21C06F59000E0BA9 /* Storyboard+Util.swift in Sources */,
+				B74C92D521F4F29D001D0631 /* HelpCoordinator.swift in Sources */,
+				B7FA12BF21DBA2BB00F547AC /* KeychainSwift+Save.swift in Sources */,
+				B76BACD12200EE2600ED5EF0 /* Reachability.swift in Sources */,
+				B74ED2A421C0441A000E0BA9 /* WelcomeViewModel.swift in Sources */,
+				B7FA12CD21DBAC3C00F547AC /* ComposeViewController.swift in Sources */,
+				B74ED2A521C0441A000E0BA9 /* WelcomeCoordinator.swift in Sources */,
+				B7950ED321DD63FF00E3EFB0 /* AccountTableViewCell.swift in Sources */,
+				B758A7EA21EA6C6300269B1D /* UINavigationController+Transition.swift in Sources */,
+				B758A7E821EA68DB00269B1D /* UserDefaults+Storage.swift in Sources */,
+				B758A7E621EA5F7800269B1D /* UIView+Border.swift in Sources */,
+				B74ED2A321C0441A000E0BA9 /* WelcomeViewController.swift in Sources */,
+				B7950ED621DD6EB500E3EFB0 /* Dictionary+JSON.swift in Sources */,
+				B7950EC921DD608700E3EFB0 /* AccountCoordinator.swift in Sources */,
+				B74ED2B821C05495000E0BA9 /* ListMessagesViewController.swift in Sources */,
+				B76BACD42200EED100ED5EF0 /* Reachability+Util.swift in Sources */,
+				B758A7D821EA28D200269B1D /* TwilioError.swift in Sources */,
+				B74C92D621F4F29D001D0631 /* HelpViewModel.swift in Sources */,
+				B7FA12E921DBFEF800F547AC /* TwilioResponse.swift in Sources */,
+				B758D7CF21EB55FF00A14824 /* UIWindow+Toast.swift in Sources */,
+				B74C92D421F4F29D001D0631 /* HelpViewController.swift in Sources */,
+				B7950ECE21DD60E000E3EFB0 /* Account.swift in Sources */,
+				B76BACD6220103A200ED5EF0 /* UIWindow+Busy.swift in Sources */,
+				B7950ECB21DD608700E3EFB0 /* AccountViewModelItem.swift in Sources */,
+				B7FA12DB21DBBD7800F547AC /* Message.swift in Sources */,
+				B7FA12E321DBC07000F547AC /* API.swift in Sources */,
+				B74ED29821C03F67000E0BA9 /* LoginCoordinator.swift in Sources */,
+				B74ED2B721C05495000E0BA9 /* ListMessagesViewModel.swift in Sources */,
+				B7FA12D221DBBD7000F547AC /* URLRequest+HTTPAuth.swift in Sources */,
+				B74ED28B21C03DB5000E0BA9 /* AppDelegate.swift in Sources */,
+				B74ED2CB21C065FB000E0BA9 /* ViewModel.swift in Sources */,
+				B74ED2C921C065EB000E0BA9 /* Coordinator.swift in Sources */,
+				B758A7DC21EA53F000269B1D /* NavigtionController.swift in Sources */,
+				B7FA12E721DBC3C200F547AC /* RestMapper.swift in Sources */,
+				B7950ED821DD7AE200E3EFB0 /* Dictionary+QueryString.swift in Sources */,
+				B7FA12CC21DBAC3C00F547AC /* ComposeViewModel.swift in Sources */,
+				B74ED2B621C05495000E0BA9 /* ListMessagesCoordinator.swift in Sources */,
+				B7FA12CB21DBAC3C00F547AC /* ComposeCoordinator.swift in Sources */,
+				B7FA12D421DBBD7000F547AC /* Data+JSON.swift in Sources */,
+				B758A7E021EA556E00269B1D /* Styling.swift in Sources */,
+				B7FA12EC21DC0D3C00F547AC /* ListMessageTableViewCell.swift in Sources */,
+				B7950ED021DD60E800E3EFB0 /* Accounts.swift in Sources */,
+				B74ED29E21C03F8C000E0BA9 /* LoginViewModel.swift in Sources */,
+				B7FA12EF21DC0D7700F547AC /* ListMessagesViewModelItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79795CF21A7669F004537A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B785BF9A220257310032C2DE /* TestAPI-Accounts.swift in Sources */,
+				B785BF98220254100032C2DE /* Util.swift in Sources */,
+				B785BF9E2202593F0032C2DE /* TestAccountViewModel.swift in Sources */,
+				B785BFA2220261350032C2DE /* TestComposeViewModel.swift in Sources */,
+				B785BFA022025B830032C2DE /* TestMessagesViewModel.swift in Sources */,
+				B785BF9C2202573C0032C2DE /* TestAPI-Messages.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B79795DA21A7669F004537A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76AD1192205C7B5002D6F71 /* XCTestCase+Util.swift in Sources */,
+				B76AD1142205AE92002D6F71 /* UIWelcome.swift in Sources */,
+				B79795E321A7669F004537A8 /* Test_Welcome.swift in Sources */,
+				B76AD1172205C579002D6F71 /* XCUIElement+Util.swift in Sources */,
+				B76AD1202205D463002D6F71 /* Util.swift in Sources */,
+				B76AD11C2205D376002D6F71 /* Test_Login_Success.swift in Sources */,
+				B76AD11E2205D382002D6F71 /* UILogin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B79795D521A7669F004537A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B79795BE21A7669C004537A8 /* Twilio Message */;
+			targetProxy = B79795D421A7669F004537A8 /* PBXContainerItemProxy */;
+		};
+		B79795E021A7669F004537A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B79795BE21A7669C004537A8 /* Twilio Message */;
+			targetProxy = B79795DF21A7669F004537A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B74ED28621C03DB5000E0BA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B74ED28721C03DB5000E0BA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B74ED28821C03DB5000E0BA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B74ED28921C03DB5000E0BA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B79795E521A7669F004537A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B79795E621A7669F004537A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B79795E821A7669F004537A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.justaddcode.twilio-message";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B79795E921A7669F004537A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.justaddcode.twilio-message";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B79795EB21A7669F004537A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.justaddcode.twilio-message.unittest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twilio Message.app/Twilio Message";
+			};
+			name = Debug;
+		};
+		B79795EC21A7669F004537A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.justaddcode.twilio-message.unittest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twilio Message.app/Twilio Message";
+			};
+			name = Release;
+		};
+		B79795EE21A7669F004537A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.justaddcode.twilio-message.uitest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Twilio Message";
+			};
+			name = Debug;
+		};
+		B79795EF21A7669F004537A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.justaddcode.twilio-message.uitest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Twilio Message";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B79795BA21A7669C004537A8 /* Build configuration list for PBXProject "Twilio Message" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79795E521A7669F004537A8 /* Debug */,
+				B79795E621A7669F004537A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B79795E721A7669F004537A8 /* Build configuration list for PBXNativeTarget "Twilio Message" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79795E821A7669F004537A8 /* Debug */,
+				B79795E921A7669F004537A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B79795EA21A7669F004537A8 /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79795EB21A7669F004537A8 /* Debug */,
+				B79795EC21A7669F004537A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B79795ED21A7669F004537A8 /* Build configuration list for PBXNativeTarget "UITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79795EE21A7669F004537A8 /* Debug */,
+				B79795EF21A7669F004537A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B79795B721A7669C004537A8 /* Project object */;
+}

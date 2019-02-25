@@ -1,0 +1,3 @@
+github "ReactiveX/RxSwift" == 4.4.0
+github "SwiftyBeaver/SwiftyBeaver" == 1.6.1
+github "evgenyneu/keychain-swift" == 13.0.0

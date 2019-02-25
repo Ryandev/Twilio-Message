@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconBubble" translatesAutoresizingMaskIntoConstraints="NO" id="7O9-KK-9Y8" userLabel="image_logo">
+                                <rect key="frame" x="131.5" y="250.5" width="112.5" height="60"/>
+                                <color key="tintColor" red="0.047058823530000002" green="0.058823529409999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7O9-KK-9Y8" secondAttribute="height" multiplier="15:8" id="ibD-Yi-7zx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgC-aO-iiP" userLabel="label_title">
+                                <rect key="frame" x="144" y="330.5" width="87" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.047058823530000002" green="0.058823529409999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IuH-CE-kuv" userLabel="container_bottom">
+                                <rect key="frame" x="0.0" y="609" width="375" height="58"/>
+                                <color key="backgroundColor" red="0.047058823529411764" green="0.058823529411764705" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IuH-CE-kuv" secondAttribute="height" multiplier="375:58" id="ZB3-qw-8YQ"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconPoweredBy" translatesAutoresizingMaskIntoConstraints="NO" id="ZC0-Sl-xv9" userLabel="image_poweredby">
+                                <rect key="frame" x="131.5" y="619.5" width="112.5" height="37.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZC0-Sl-xv9" secondAttribute="height" multiplier="30:10" id="FbP-OZ-U8I"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZC0-Sl-xv9" firstAttribute="centerY" secondItem="IuH-CE-kuv" secondAttribute="centerY" id="MWc-Ix-IKc"/>
+                            <constraint firstItem="MgC-aO-iiP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="XeU-Ne-O5a"/>
+                            <constraint firstItem="7O9-KK-9Y8" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.3" id="Y2O-2t-wgi"/>
+                            <constraint firstAttribute="bottom" secondItem="IuH-CE-kuv" secondAttribute="bottom" id="c0V-19-Ddd"/>
+                            <constraint firstItem="MgC-aO-iiP" firstAttribute="top" secondItem="7O9-KK-9Y8" secondAttribute="bottom" constant="20" id="cfV-ko-b02"/>
+                            <constraint firstItem="ZC0-Sl-xv9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="djp-K2-cKI"/>
+                            <constraint firstItem="7O9-KK-9Y8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eae-0Z-viY"/>
+                            <constraint firstItem="IuH-CE-kuv" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="g2z-N9-9hR"/>
+                            <constraint firstItem="ZC0-Sl-xv9" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.3" id="hA1-8e-ZfV"/>
+                            <constraint firstItem="IuH-CE-kuv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mZK-mw-mNz"/>
+                            <constraint firstItem="MgC-aO-iiP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qum-QR-Nzc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IconBubble" width="466" height="441"/>
+        <image name="IconPoweredBy" width="300" height="80"/>
+    </resources>
+</document>

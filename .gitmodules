@@ -1,0 +1,3 @@
+[submodule "Dependencies/Reachability"]
+	path = Dependencies/Reachability
+	url = https://github.com/ashleymills/Reachability.swift

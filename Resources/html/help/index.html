@@ -1,0 +1,70 @@
+<html>
+<head>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"></link>
+	<style>
+		h1 {
+			font-size: 9vmin;
+			text-align: center;
+		}
+		
+		h3 {
+			font-size: 7vmin !important;
+		}
+	
+		body {
+			font-size: 5.5vmin;
+		}
+	</style>
+	
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		
+		</br>
+	
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title">Sign Up</h3>
+			</div>
+			<div class="panel-body">
+				Before using, you will need to create an account on <a href='https://www.twilio.com/try-twilio'>Twilio.com</a>
+			</div>
+		</div>
+		
+		</br>
+	
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title">Logging In</h3>
+			</div>
+			<div class="panel-body">
+				After logging in on Twilio.com, go to your <a href='https://www.twilio.com/console/project/settings'>Dashboard->Settings->General</a> and use the 'Account SID' for the username field, the 'Auth token' for the password field during app login
+			</div>
+		</div>
+		
+		</br>
+	
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title">Sending Messages</h3>
+			</div>
+			<div class="panel-body">
+				<em>From:</em> You can set the from field to any alpha-numeric sequence up to 11 characters long <a href='https://www.twilio.com/docs/glossary/what-alphanumeric-sender-id'>(more info)</a>
+				</br>
+				</br>
+				<em>To:</em> This can be any number worldwide, but it must start with '+' followed by the country code &amp; finally your destination number
+				</br>
+				</br>
+				<em>Body:</em> Up to 160 characters are allowed in a single message, you can send longer messages however you will be be billed according to the 160 character per message rate <a href='https://www.twilio.com/docs/glossary/what-sms-character-limit'>(more info)</a>
+			</div>
+		</div>
+
+	</div> <!-- end container -->
+
+</body>
+
+</html>
